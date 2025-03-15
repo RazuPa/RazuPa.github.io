@@ -1,0 +1,61 @@
+# Profile Generator (Java, Console)
+
+## Description
+A **console-based profile generator** that collects user information and displays a formatted summary.
+
+## Features
+- **User Input Handling**: Collects name, age, a preferred character, item pricing, and Java preference.
+- **Boolean Input Validation**: Ensures users enter a valid true/false response.
+- **Formatted Output**: Displays a neatly structured profile summary.
+- **Error Handling**: Prevents invalid inputs from breaking the program.
+
+## Technologies Used
+- Java
+- Scanner class for user input
+
+## Installation & Usage
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Compile and run the program:
+   ```sh
+   javac ProfileGenerator.java
+   java ProfileGenerator
+   ```
+3. Follow the prompts to enter the required information.
+
+## Example Output
+```
+Enter your name: 
+Alice
+Enter your age: 
+25
+Who do you like?: 
+J
+What should a bottle of water cost?: 
+1.99
+Do you think Java is fun? (true/false): 
+true
+
+--- Profile Summary ---
+Name: Alice
+Age: 25
+Who do you like?: J
+What should a bottle of water cost?: $1.99
+Likes Java: true
+That's solid! Keep it going!
+```
+
+## Error Handling Examples
+```
+Do you think Java is fun? (true/false): 
+yes
+Invalid input. Please enter true or false.
+```
+
+## License
+This project is open-source and available for modification and use.
+
+## Author
+Razmus Palsson

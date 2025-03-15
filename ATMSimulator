@@ -1,0 +1,66 @@
+# ATM Simulator (Java, Console)
+
+## Description
+A **console-based ATM simulator** that allows users to **check balance, deposit, and withdraw money** while ensuring secure transactions and error handling.
+
+## Features
+- **Check Balance**: Displays the current account balance.
+- **Deposit Money**: Allows users to add money to their balance.
+- **Withdraw Money**: Ensures sufficient funds before allowing withdrawals.
+- **User Input Validation**: Prevents invalid numeric inputs.
+- **Error Handling**: Handles insufficient funds and incorrect input gracefully.
+- **Looped Menu**: Users can perform multiple transactions before exiting.
+
+## Technologies Used
+- Java
+- Scanner class for user input
+- Basic Arithmetic Operations
+
+## Installation & Usage
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Compile and run the program:
+   ```sh
+   javac ATMSimulator.java
+   java ATMSimulator
+   ```
+3. Follow the prompts to choose a menu option.
+
+## Example Output
+```
+ATM Menu:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Choose an option: 1
+Current balance: $1000.00
+
+Choose an option: 2
+Enter deposit amount: 200
+Successfully deposited $200.00. New balance: $1200.00
+
+Choose an option: 3
+Enter withdrawal amount: 500
+Successfully withdrew $500.00. Remaining balance: $700.00
+
+Choose an option: 4
+Thank you for using the ATM. Goodbye!
+```
+
+## Error Handling Examples
+```
+Enter withdrawal amount: 2000
+Insufficient funds.
+
+Enter deposit amount: abc
+Invalid input. Please enter a valid amount: 100
+```
+
+## License
+This project is open-source and available for modification and use.
+
+## Author
+Razmus Palsson

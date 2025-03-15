@@ -1,0 +1,50 @@
+# Electric Car Charging Time Calculator (Java, Console)
+
+## Description
+A **console-based calculator** that estimates the charging time for an electric car battery based on user inputs.
+
+## Features
+- Accepts **battery capacity, current, and voltage** as inputs
+- Supports **single-phase and three-phase** charging
+- Calculates **charging power and charging time**
+- **Input validation** ensures correct user entries
+
+## Technologies Used
+- Java
+- Scanner class for user input
+- Math functions for calculations
+
+## Installation & Usage
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Compile and run the program:
+   ```sh
+   javac ChargingTimeCalculator.java
+   java ChargingTimeCalculator
+   ```
+3. Follow the prompts to enter the necessary values.
+
+## Example Output
+```
+Electric Car Charging Time Calculator
+Enter battery capacity (kWh): 50
+Enter current (A): 32
+Enter voltage (V): 230
+Is it a three-phase connection? (yes/no): no
+Charging Power: 7.36 kW
+Estimated Charging Time: 6.79 hours
+```
+
+## Error Handling Examples
+```
+Enter current (A): abc
+Invalid input. Please enter a valid number: 16
+```
+
+## License
+This project is open-source and available for modification and use.
+
+## Author
+Razmus Palsson

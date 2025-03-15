@@ -1,0 +1,59 @@
+# Game Score System (Java, Console)
+
+## Description
+A **console-based game scoring system** where players earn points over multiple rounds. The system demonstrates the difference between **integer-based scoring** and **floating-point bonuses**.
+
+## Features
+- User **inputs base points and bonus percentage**
+- **Randomized bonus points** per round
+- **Total score includes integer-based points + floating-point bonuses**
+- **Error handling** for valid numeric input
+- Displays **final score with proper formatting**
+
+## Technologies Used
+- Java
+- Scanner class for user input
+- Random class for generating bonus points
+
+## Installation & Usage
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Compile and run the program:
+   ```sh
+   javac GameScoreSystem.java
+   java GameScoreSystem
+   ```
+3. Enter your name, base points, and bonus percentage when prompted.
+
+## Example Output
+```
+Welcome to the Game Score System!
+Enter your name: Alex
+Enter the base points per round (integer): 100
+Enter the bonus percentage per round (float): 15.5
+
+Starting the game...
+Round 1: Earned 107 points, Bonus: 16.59 points
+Round 2: Earned 104 points, Bonus: 16.12 points
+Round 3: Earned 109 points, Bonus: 16.90 points
+
+Game Over!
+Player: Alex
+Total Points (Integer-based): 320
+Total Bonus (Floating-point): 49.61
+Final Score (Total + Bonus): 369.61
+```
+
+## Error Handling Examples
+```
+Enter base points (integer): abc
+Invalid input. Please enter a valid integer: 100
+```
+
+## License
+This project is open-source and available for modification and use.
+
+## Author
+Razmus Palsson
