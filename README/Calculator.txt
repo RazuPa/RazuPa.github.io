@@ -1,0 +1,38 @@
+## **Calculator**
+
+### **Description**
+A simple calculator that performs **addition, subtraction, multiplication, and division**.
+
+### **Features**
+- Supports floating-point calculations.
+- Handles invalid input gracefully.
+- Prevents division by zero.
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac CalculatorOne.java
+   ```
+2. **Run the program:**
+   ```sh
+   java CalculatorOne
+   ```
+
+### **Usage**
+- Enter two numbers and choose an operation (+, -, *, /).
+- The program will display the result.
+
+### **Example Output**
+```
+Enter first number: 10
+Enter operation (+, -, *, /): *
+Enter second number: 5
+Result: 50.0
+```
+
+### **Error Handling**
+- Detects non-numeric input.
+- Prevents division by zero.
+
+Author 
+RazuPa

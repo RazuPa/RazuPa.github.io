@@ -1,0 +1,35 @@
+## **Electric Car Charging Time Calculator**
+
+### **Description**
+Computes **charging time for an electric vehicle** based on **battery capacity, voltage, and current**.
+
+### **Features**
+- Supports single-phase and three-phase calculations.
+- Provides formatted output for readability.
+- Ensures valid user input.
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac ChargingTimeCalculatorTwo.java
+   ```
+2. **Run the program:**
+   ```sh
+   java ChargingTimeCalculatorTwo
+   ```
+
+### **Usage**
+- Enter battery capacity, voltage, and current values.
+- The program calculates and displays the estimated charging time.
+
+### **Example Output**
+```
+Enter battery capacity (kWh): 50
+Enter current (A): 32
+Enter voltage (V): 230
+Charging Power: 7.36 kW
+Estimated Charging Time: 6.79 hours
+```
+
+Author
+RazuPa

@@ -1,0 +1,47 @@
+## **RPG Battle Game**
+
+### **Description**
+A **turn-based RPG battle** where players choose a character class and fight an **AI-controlled enemy**.
+
+### **Features**
+- Character selection (Warrior, Mage, Archer).
+- AI enemy with randomized attack power.
+- Different actions: Attack, Defend, Heal, Check Stats.
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac RPGGame.java
+   ```
+2. **Run the program:**
+   ```sh
+   java RPGGame
+   ```
+
+### **Usage**
+- Choose your class and enter battle.
+- Attack, defend, or heal strategically.
+- Win by reducing the enemy’s health to zero.
+
+### **Example Output**
+```
+Choose your class:
+1. Warrior
+2. Mage
+3. Archer
+Enter choice (1-3): 2
+Battle Begins! You encounter a Goblin
+Your Turn!
+1. Attack
+2. Defend
+3. Heal
+4. Check Stats
+Choose an action (1-4): 1
+You cast a fireball!
+Goblin - Health: 70
+```
+
+---
+
+Author
+RazuPa

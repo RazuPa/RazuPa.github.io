@@ -1,0 +1,43 @@
+### **Description**
+A basic ATM simulation that allows users to **check balance, deposit, and withdraw money** with input validation.
+
+### **Features**
+- Menu-driven system for easy navigation.
+- Secure transactions with input validation.
+- Handles errors for invalid inputs and insufficient funds.
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac ATMSimulator.java
+   ```
+2. **Run the program:**
+   ```sh
+   java ATMSimulator
+   ```
+
+### **Usage**
+- Select an option from the menu (1-4).
+- Enter deposit or withdrawal amounts when prompted.
+- The program will display updated balances after each transaction.
+
+### **Example Output**
+```
+ATM Menu:
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+Choose an option: 2
+Enter deposit amount: 200
+Successfully deposited $200.00. New balance: $1200.00
+```
+
+### **Error Handling**
+- Invalid input detection (non-numeric characters).
+- Prevents over-withdrawal by checking balance.
+- Loops until a valid input is provided.
+
+
+Author 
+RazuPa

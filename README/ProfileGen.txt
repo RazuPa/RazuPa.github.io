@@ -1,0 +1,44 @@
+ **Profile Generator**
+
+### **Description**
+Collects user details (name, age, preferences) and generates a **profile summary**.
+
+### **Features**
+- Handles different data types (int, char, double, boolean).
+- Displays a clean, formatted summary.
+- Prevents incorrect boolean inputs (true/false validation).
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac ProfileGenerator.java
+   ```
+2. **Run the program:**
+   ```sh
+   java ProfileGenerator
+   ```
+
+### **Usage**
+- Enter user details when prompted.
+- The program generates a formatted profile summary.
+
+### **Example Output**
+```
+Enter your name: Alice
+Enter your age: 25
+Who do you like?: J
+What should a bottle of water cost?: $1.99
+Do you think Java is fun? (true/false): true
+--- Profile Summary ---
+Name: Alice
+Age: 25
+Who do you like?: J
+What should a bottle of water cost?: $1.99
+Likes Java: true
+```
+
+---
+
+Author 
+
+RazuPa

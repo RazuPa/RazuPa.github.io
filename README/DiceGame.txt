@@ -1,0 +1,67 @@
+# Dice Game (Java, Console)
+
+## 🎲 Description
+A **fun and interactive console-based Dice Game** where players roll two dice and try to hit a lucky number! Test your luck and see how many times you can win.
+
+## 🔥 Features
+- **Exciting Gameplay**: Roll two dice and get a total score.
+- **Winning & Losing Conditions**:
+  - 🎉 **Win:** Roll a **7** or **11**.
+  - 💀 **Lose:** Roll a **2**, **3**, or **12**.
+  - 🤞 **Try Again:** Any other number.
+- **Score Tracking**: Keeps track of **wins & losses**.
+- **Replay Option**: Allows players to roll again.
+- **Engaging UI**: Fun messages and game-like prompts.
+
+## 🛠 Technologies Used
+- Java
+- Scanner class for user input
+- Random class for rolling dice
+
+## 🚀 Installation & Usage
+1. Clone this repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Compile and run the program:
+   ```sh
+   javac DiceGame.java
+   java DiceGame
+   ```
+3. Follow the prompts and roll the dice!
+
+## 🎮 Example Output
+```
+🎲 Welcome to the Ultimate Dice Challenge! 🎲
+Enter your player name: Alex
+
+🔥 Get ready, Alex! You will roll two dice! Try to hit a lucky number! 🔥
+Press Enter to roll the dice...
+
+🎲 You rolled a 5 and a 2! Total: 7
+🎉 Lucky roll! You win!
+
+Wins: 1 | Losses: 0
+Do you want to roll again? (yes/no): yes
+
+🎲 You rolled a 3 and a 4! Total: 7
+🎉 Lucky roll! You win!
+
+Wins: 2 | Losses: 0
+Do you want to roll again? (yes/no): no
+
+🏆 Final Score: Alex - Wins: 2 | Losses: 0
+🎮 Thanks for playing! See you next time! 🎮
+```
+
+## ⚠ Error Handling Examples
+```
+Do you want to roll again? (yes/no): maybe
+Invalid input. Please enter yes or no.
+```
+
+## 📜 License
+This project is open-source and available for modification and use.
+
+## ✨ Author
+Razmus Palsson

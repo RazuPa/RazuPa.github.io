@@ -1,0 +1,33 @@
+## **Dice Game**
+
+### **Description**
+A **fun and interactive dice game** where players roll two dice and try to win by hitting a lucky number.
+
+### **Features**
+- Rolls two dice with randomized outcomes.
+- Tracks wins and losses.
+- Fun messages and emojis for player engagement.
+
+### **Installation**
+1. **Compile the program:**
+   ```sh
+   javac DiceGame.java
+   ```
+2. **Run the program:**
+   ```sh
+   java DiceGame
+   ```
+
+### **Usage**
+- Press Enter to roll the dice.
+- Rolling a 7 or 11 wins, while 2, 3, or 12 loses.
+- Play again or exit.
+
+### **Example Output**
+```
+🎲 You rolled a 5 and a 2! Total: 7
+🎉 Lucky roll! You win!
+Wins: 1 | Losses: 0
+```
+
+Author RazuPa
