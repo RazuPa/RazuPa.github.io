@@ -1,0 +1,122 @@
+/*
+ * Java Glossary for Beginner to Intermediate Developers
+ * 
+ * This file covers all essential Java concepts required to start developing applications, games, and valuable projects.
+ */
+
+import java.util.*;
+import java.io.*;
+import java.nio.file.*;
+import java.util.stream.*;
+import java.sql.*;
+
+// 1. CLASS: Blueprint for creating objects.
+public class JavaGlossary {
+    
+    // 2. MAIN METHOD: The entry point of any Java application.
+    public static void main(String[] args) {
+        
+        // 3. VARIABLES: Used to store values in memory.
+        int age = 25; // Integer variable
+        double price = 9.99; // Floating-point variable
+        char grade = 'A'; // Character variable
+        boolean isJavaFun = true; // Boolean variable
+        String message = "Welcome to Java!"; // String (text) variable
+        
+        // 4. PRINTING OUTPUT: Displaying data on the console.
+        System.out.println("Age: " + age);
+        System.out.println("Message: " + message);
+        
+        // 5. OPERATORS: Performing calculations and comparisons.
+        int sum = age + 5; // Addition
+        boolean isAdult = age > 18; // Comparison
+        
+        // 6. CONDITIONAL STATEMENTS: Decision making in code.
+        if (isAdult) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are not an adult.");
+        }
+        
+        // 7. LOOPS: Executing code multiple times.
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration: " + i);
+        }
+        
+        // 8. ARRAYS: Collection of similar data types.
+        int[] numbers = {10, 20, 30, 40};
+        System.out.println("First element in array: " + numbers[0]);
+        
+        // 9. LISTS: Dynamic collections that can grow/shrink.
+        List<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        System.out.println("Names List: " + names);
+        
+        // 10. METHODS (FUNCTIONS): Reusable code blocks.
+        greetUser("Alice");
+        
+        // 11. CLASSES AND OBJECTS: OOP basics.
+        Person person = new Person("John", 30);
+        person.introduce();
+        
+        // 12. FILE HANDLING: Reading/Writing files.
+        FileHandlingExample.writeToFile("test.txt", "Java is awesome!");
+        FileHandlingExample.readFile("test.txt");
+        
+        // 13. DATABASE CONNECTION (JDBC): Connecting Java to a database.
+        DatabaseExample.connectToDatabase();
+    }
+    
+    // SIMPLE METHOD EXAMPLE
+    public static void greetUser(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+}
+
+// CLASS EXAMPLE
+class Person {
+    String name;
+    int age;
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void introduce() {
+        System.out.println("Hi, I'm " + name + " and I'm " + age + " years old.");
+    }
+}
+
+// FILE HANDLING CLASS
+class FileHandlingExample {
+    public static void writeToFile(String filename, String content) {
+        try {
+            Files.writeString(Path.of(filename), content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void readFile(String filename) {
+        try {
+            List<String> lines = Files.readAllLines(Path.of(filename));
+            lines.forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+// DATABASE CONNECTION EXAMPLE
+class DatabaseExample {
+    public static void connectToDatabase() {
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "user", "password");
+            System.out.println("Connected to the database.");
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
