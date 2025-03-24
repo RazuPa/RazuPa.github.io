@@ -33,7 +33,3 @@ https://razupa.github.io/#projects
 
 
 <h2>📜 Certifications </h2>
-
-- FreeAcademy
-
-- Microsoft
